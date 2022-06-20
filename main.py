@@ -22,17 +22,9 @@ import ProxyCloud
 import socket
 import tlmedia
 import S5Crypto
-import asyncio
-import aiohttp
-from yarl import URL
-import re
-from draft_to_calendar import send_calendar
+import 
+from 
 
-def sign_url(token: str, url: URL):
-    query: dict = dict(url.query)
-    query["token"] = token
-    path = "webservice" + url.path
-    return url.with_path(path).with_query(query)
 
 def downloadFile(downloader,filename,currentBits,totalBits,speed,time,args):
     try:
