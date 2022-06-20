@@ -240,7 +240,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'bladimirlorenzo'
+        tl_admin_user = 'Michel1203'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -257,7 +257,7 @@ def onmessage(update,bot:ObigramClient):
                 user_info = jdb.get_user(username)
                 jdb.save()
         else:
-              mensaje = "❌No tienes Acceso❌.\nPor favor Contacta con mi Programador @bladimirlorenzo\n"
+              mensaje = "❌No tienes Acceso❌.\nPor favor Contacta con mi Programador @Michel1203\n"
             intento_msg = "💢El usuario @"+username+ " ha intentando usar el bot sin permiso💢"
             bot.sendMessage(update.message.chat.id,mensaje)
             bot.sendMessage(838890371,intento_msg)
@@ -490,8 +490,8 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = 'Bot: TGUploaderPro v7.0 Fixed\n'
-            start_msg+= 'EDICTADO POR: @bladimirlorenzo'
+            start_msg = 'Bot: Up-Moodle v1.0 Fixed\n'
+            start_msg+= 'EDICTADO POR: @Michel1203'
             start_msg+= 'Uso: Uploader to the Moodles Free\n'
             bot.editMessageText(message,start_msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
@@ -585,9 +585,9 @@ def onmessage(update,bot:ObigramClient):
             #    bot_token = os.environ.get('bot_token')
             #    
                 # set in debug
-            #    api_id = 9520699
-            #    api_hash = '353e5b6ef2c174d0e8d7fb62e277840d'
-            #    bot_token = ''
+            #    api_id = 11405596
+            #    api_hash = '39ad6135ac9b75a47f2d1804c092c8f8'
+            #    bot_token = '5053538247:AAEUEpY1008i2V9Uk_AD0Lao50qs9npylNU'
 
             #    chat_id = int(update.message.chat.id)
             #    message_id = int(update.message.message_id)
@@ -603,7 +603,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #decomentar abajo y modificar solo si se va a poner el token del bot manual
-    #bot_token = 'BOT '
+    bot_token = '5053538247:AAEUEpY1008i2V9Uk_AD0Lao50qs9npylNU'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
