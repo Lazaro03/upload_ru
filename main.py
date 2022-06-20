@@ -23,8 +23,6 @@ import socket
 import tlmedia
 import S5Crypto
  
-
-
 def downloadFile(downloader,filename,currentBits,totalBits,speed,time,args):
     try:
         bot = args[0]
