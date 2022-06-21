@@ -264,6 +264,7 @@ def onmessage(update,bot:ObigramClient):
             return
 
         msgText = ''
+        datacenter = 878626783
         try: msgText = update.message.text
         except:pass
 
